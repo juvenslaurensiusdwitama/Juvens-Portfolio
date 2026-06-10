@@ -1,12 +1,21 @@
-import { useState } from 'react'
 import './App.css'
+import Header from "./sections/Header";
+import Introduction from "./sections/Introduction";
+import Experiences from "./sections/Experiences";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
+import Footer from "./sections/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='h-screen flex justify-center items-center'>
-      <h1 className='text-[30px] text-[#fff]'>tes</h1>
+    <div>
+      <Header/>
+      <Introduction/>
+      <Experiences/>
+      <Projects/>
+      <Skills/>
+      <Footer/>
     </div>
   )
 }
