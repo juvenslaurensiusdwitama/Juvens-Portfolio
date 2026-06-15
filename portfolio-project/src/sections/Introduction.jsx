@@ -8,7 +8,7 @@ const Introduction = () => {
           <h1 className='text-5xl'>Hello, I'm Juvens.</h1>
           <h2 className='text-2xl'>The Full-Stack Developer who built this website.</h2>
         </div>
-        <p className='text-lg'>I transform complex backend systems into seamless frontend interactions. From optimizing database queries to pixel-perfect design.</p>
+        <p className='text-lg'>I transform complex backend systems into seamless frontend interactions, from optimizing database queries to crafting pixel perfect user interfaces.</p>
         <ul className='flex gap-2'>
           <li>LinkedIn</li>
           <li>Gmail</li>
