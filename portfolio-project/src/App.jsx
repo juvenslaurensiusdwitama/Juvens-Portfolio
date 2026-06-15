@@ -9,7 +9,7 @@ import Footer from "./sections/Footer";
 function App() {
 
   return (
-    <div>
+    <div className='font-display relative'>
       <Header/>
       <Introduction/>
       <Experiences/>
