@@ -2,7 +2,9 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <div className='flex justify-center items-center h-dvh'>
+      <h1>Hard Skills</h1>
+    </div>
   )
 }
 
