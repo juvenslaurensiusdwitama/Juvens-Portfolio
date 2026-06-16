@@ -2,7 +2,9 @@ import programmingGIF from '../assets/programming.gif'
 
 const Introduction = () => {
   return (
-    <div className='h-dvh flex justify-center items-center'>
+    <div className={`h-dvh flex justify-between items-center gap-10 bg-center bg-cover px-[350px]`}
+      // style={{ backgroundImage: `url(${bg1})` }}
+    >
       <div className='flex flex-col gap-8 max-w-[530px]'>
         <div className='flex flex-col gap-4'>
           <h1 className='text-5xl'>Hello, I'm Juvens.</h1>
