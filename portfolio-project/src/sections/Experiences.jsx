@@ -1,6 +1,5 @@
 import React from 'react'
 import Experience from '../components/Experience'
-import wavybg from '../assets/wavybg.png'
 import ramu from '../assets/ramu.png'
 import alterra from '../assets/alterra.jpeg'
 import schooltech from '../assets/schooltech.png'
@@ -38,9 +37,7 @@ const Experiences = () => {
   
 
   return (
-    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-cover bg-center px-[400px] border-b-[5px] border-solid border-white text-white'
-    style={{ backgroundImage: `url(${wavybg})` }}
-    >
+    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-cover bg-center px-[400px] text-white'>
       <h1 className='text-4xl'>My Experiences</h1>
       {datas.map((data, i) =>(
         <Experience key={i} data={data} />

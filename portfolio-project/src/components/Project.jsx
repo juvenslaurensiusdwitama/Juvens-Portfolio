@@ -3,49 +3,42 @@ import {
 } from "@/components/ui/carousel"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import {
-    Card,
-    CardAction,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
 
 const Project = ({ datas }) => {
 
     return (
         <>
             {datas.map((data, index) => (
-                <CarouselItem key={index} className="basis-1/2 lg:basis-1/3">
-                    <Card className="relative mx-auto w-full max-w-sm pt-0">
-                        <div className="absolute aspect-video bg-black/35" />
+                <CarouselItem key={index} className="basis-1/2 xl:basis-1/3 w-[200px]">
+                    <div className="p-2  text-white">
                         <img
                             src="https://avatar.vercel.sh/shadcn1"
                             alt="Event cover"
-                            className="relative aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+                            className="w-full rounded-md"
                         />
-                        <CardHeader>
-                            <CardAction>
-                                <Badge variant="secondary">
-                                    {data.status === true ?
-                                        <span>Active</span>
-                                        : <span>Expired</span>
-                                    }
-                                </Badge>
-                            </CardAction>
-                            <CardTitle>{data.projectName}</CardTitle>
-                            <CardDescription>{data.description}</CardDescription>
-                        </CardHeader>
-                        <CardFooter>
-                            <Button className="w-full">
+                        <div className="py-4">
+                            <div className="flex justify-between">
+                                <span>{data.projectName}</span>
+                                {data.status === true ?
+                                    <Badge className="bg-green-50 text-green-700 bg-green-950 text-green-300">
+                                        Active
+                                    </Badge>
+                                    : <Badge className="bg-red-50 text-red-700 bg-red-950 text-red-300">
+                                        Inactive
+                                    </Badge>
+                                }
+                            </div>
+                            <span>{data.description}</span>
+                        </div>
+                        <div className="flex justify-center">
+                            <Button className="w-full cursor-pointer bg-white/30 backdrop-blur-md border-0">
                                 {data.status === true ?
                                     <span>{data.link}</span>
                                     : <span>Link Expired</span>
                                 }
                             </Button>
-                        </CardFooter>
-                    </Card>
+                        </div>
+                    </div>
                 </CarouselItem>
             ))}
 

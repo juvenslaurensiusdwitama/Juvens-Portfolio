@@ -1,5 +1,4 @@
 import Project from '../components/Project'
-import wavybg2 from '../assets/wavybg2.png'
 import {
   Carousel,
   CarouselContent,
@@ -54,10 +53,8 @@ const Projects = () => {
   ]
 
   return (
-    <div className='flex flex-col justify-center items-center h-dvh bg-center bg-cover'
-      style={{ backgroundImage: `url(${wavybg2})` }}
-    >
-      <h1 className=''>Past Projects</h1>
+    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-center bg-cover'>
+      <h1 className='text-4xl text-white'>Past Projects</h1>
       <Carousel>
         <CarouselContent>
           <Project datas={datas.reverse()}/>
