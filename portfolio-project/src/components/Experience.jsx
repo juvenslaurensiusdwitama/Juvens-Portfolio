@@ -13,11 +13,11 @@ const Experience = ({ data }) => {
 						<p className="text-lg">{position} - {type}</p>
 					</div>
 				</h2>
-				<Badge className='bg-white/30 backdrop-blur-md'>
+				<Badge className='bg-white/20 backdrop-blur-md'>
 					<p className="text-[12px]">{startDate} - {endDate}</p>
 				</Badge>
 			</div>
-			<p className="mt-3">{descriptions}</p>
+			<p className="mt-3 text-gray-300">{descriptions}</p>
 			<Separator className='mt-8' />
 		</div>
 	)
