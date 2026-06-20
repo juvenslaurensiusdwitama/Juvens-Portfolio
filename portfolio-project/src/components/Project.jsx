@@ -3,53 +3,57 @@ import {
 } from "@/components/ui/carousel"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import {
-    Card,
-    CardAction,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
+import link from "../assets/external-link.png"
 
-const Project = ({ datas }) => {
-
+const Project = ({ data }) => {
     return (
-        <>
-            {datas.map((data, index) => (
-                <CarouselItem key={index} className="basis-1/2 lg:basis-1/3">
-                    <Card className="relative mx-auto w-full max-w-sm pt-0">
-                        <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-                        <img
-                            src="https://avatar.vercel.sh/shadcn1"
-                            alt="Event cover"
-                            className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
-                        />
-                        <CardHeader>
-                            <CardAction>
-                                <Badge variant="secondary">
-                                    {data.status === true ?
-                                        <span>Active</span>
-                                        : <span>Expired</span>
-                                    }
-                                </Badge>
-                            </CardAction>
-                            <CardTitle>{data.projectName}</CardTitle>
-                            <CardDescription>{data.description}</CardDescription>
-                        </CardHeader>
-                        <CardFooter>
-                            <Button className="w-full">
-                                {data.status === true ?
-                                    <span>{data.link}</span>
-                                    : <span>Link Expired</span>
-                                }
+        <div className=" text-white flex flex-col gap-4 p-2">
+            {data.image ?
+                <img
+                    src={data.image}
+                    className="w-full rounded-md h-[300px] object-cover object-center"
+                />
+                :
+                <div className="rounded-md w-full h-[300px] flex justify-center items-center bg-white/30 backdrop-blur-md">
+                    <span>Not Available</span>
+                </div>
+            }
+            <div className="flex flex-col">
+                <div className="flex flex-col gap-1 justify-center">
+                    <div className="flex justify-between items-center">
+                        <span className="font-semibold text-lg">{data.projectName}</span>
+                        {data.status === true ?
+                            <Badge className="bg-green-950 text-green-300 border-green-700">
+                                Active
+                            </Badge>
+                            : <Badge className="bg-red-950 text-red-300 border-red-700">
+                                Inactive
+                            </Badge>
+                        }
+                    </div>
+                    <p className="text-sm text-gray-300 min-h-[100px]">{data.description}</p>
+                </div>
+                <div className="flex justify-center">
+                    {data.status === true ?
+                        <a
+                            href={data.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full"
+                        >
+                            <Button className="w-full cursor-pointer bg-white/15 backdrop-blur-md border-0 hover:bg-white/25 text-white truncate flex gap-2">
+                                <span>Go to Project</span>
+                                <img src={link} alt="" className="h-[14px]"/>
                             </Button>
-                        </CardFooter>
-                    </Card>
-                </CarouselItem>
-            ))}
-
-        </>
+                        </a>
+                        :
+                        <Button className="w-full backdrop-blur-md border-0 truncate bg-black/40 hover:bg-black/40">
+                            <span className="text-white/60">Not Available</span>
+                        </Button>
+                    }
+                </div>
+            </div>
+        </div>
     )
 }
 

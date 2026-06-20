@@ -1,9 +1,13 @@
 import React from 'react'
 import Experience from '../components/Experience'
+import ramu from '../assets/ramu.png'
+import alterra from '../assets/alterra.jpeg'
+import schooltech from '../assets/schooltech.png'
 
 const Experiences = () => {
   const datas = [
     {
+      image: ramu,
       company: 'Ramu Studio',
       position: 'Front-End Web Developer',
       type: 'Freelance',
@@ -12,17 +16,19 @@ const Experiences = () => {
       descriptions: 'Developed a custom booking system for BMusicStudio that streamlined studio reservations, improved customer experience, and boosted operational efficiency. I also developed and designed a professional company profile for PT GIAT (Global Intelligence Artificial Technology) that established a clear brand identity and delivered an engaging presentation to clients and stakeholders.'
     },
     {
-      company: 'PT. Hans Business (School Tech Indonesia)',
+      image: schooltech,
+      company: 'PT Hans Business (School Tech Indonesia)',
       position: 'IT Front-End Developer',
       type: 'Internship',
       startDate: 'Aug 2024',
       endDate: 'Dec 2024',
-      descriptions: 'Collaborated with product managers and backend developers to implement core features such as role, partner, mentor, and activity management, while integrating RESTful APIs to deliver real-time data across student, teacher, and admin dashboards. I also worked with the UI/UX division to ensure a user-friendly interface, and built responsive web features for a school management platform using modern front-end tools. In an Agile/Scrum environment, I took part in code reviews, QA testing, and sprint planning, and consistently addressed bug fixes and feature improvements based on supervisor feedback.entor management, and activity management.'
+      descriptions: 'Collaborated with product managers and backend developers to implement core features such as role, partner, mentor, and activity management, while integrating RESTful APIs to deliver real-time data across student, teacher, and admin dashboards. I also worked with the UI/UX division to ensure a user-friendly interface, and built responsive web features for a school management platform using modern front-end tools. In an Agile/Scrum environment, I took part in code reviews, QA testing, and sprint planning, and consistently addressed bug fixes and feature improvements based on supervisor feedback.'
     },
     {
-      company: 'PT. Marka Kreasi Persada (Alterra Academy)',
+      image: alterra,
+      company: 'PT Marka Kreasi Persada (Alterra Academy)',
       position: 'Front-End Engineer With ReactJS',
-      type: 'Apprenticeship',
+      type: 'SIB Kampus Merdeka',
       startDate: 'Feb 2024',
       endDate: 'Jun 2024',
       descriptions: 'As the lead of the Front-end/React division for the capstone project, I developed the admin dashboard along with the manage products and product measurement data features, while collaborating closely with other divisions. In my personal projects, I built user authentication and authorization, implemented RESTful API for comments, and developed search, save, and AI chatbot features.',
@@ -31,10 +37,8 @@ const Experiences = () => {
   
 
   return (
-    <div className='flex flex-col justify-center items-center h-dvh bg-cover bg-center px-[400px]'
-    // style={{ backgroundImage: `url(${bg4})` }}
-    >
-      <h1>Work Experiences</h1>
+    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-cover bg-center px-[450px] text-white'>
+      <h1 className='text-4xl'>My Experiences</h1>
       {datas.map((data, i) =>(
         <Experience key={i} data={data} />
       ))}
