@@ -21,7 +21,7 @@ const Project = ({ data }) => {
             <div className="flex flex-col">
                 <div className="flex flex-col gap-1 justify-center">
                     <div className="flex justify-between items-center">
-                        <span className="font-semibold text-lg">{data.projectName}</span>
+                        <span className="font-medium text-white text-lg">{data.projectName}</span>
                         {data.status === true ?
                             <Badge className="bg-green-950 text-green-300 border-green-700">
                                 Active
@@ -31,7 +31,7 @@ const Project = ({ data }) => {
                             </Badge>
                         }
                     </div>
-                    <p className="text-sm text-gray-300 min-h-[120px]">{data.description}</p>
+                    <p className="text-sm text-white/80 min-h-[120px]">{data.description}</p>
                 </div>
                 <div className="flex justify-center">
                     {data.status === true ?
@@ -41,7 +41,7 @@ const Project = ({ data }) => {
                             rel="noopener noreferrer"
                             className="w-full"
                         >
-                            <Button className="w-full cursor-pointer bg-white/15 backdrop-blur-md border-0 hover:bg-white/25 text-white truncate flex gap-2">
+                            <Button className="w-full cursor-pointer bg-white/15 backdrop-blur-md border-0 hover:bg-white/25 text-white/90 truncate flex gap-2">
                                 <span>Go to Project</span>
                                 <img src={link} alt="" className="h-[14px]"/>
                             </Button>
