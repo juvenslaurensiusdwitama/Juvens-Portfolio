@@ -2,7 +2,7 @@ import download from "../assets/download.png"
 
 const Header = () => {
   return (
-    <div className='flex text-white justify-between items-center py-5 fixed top-0 left-0 right-0 px-[350px] z-50'>
+    <div className='flex text-white justify-around items-center py-5 fixed top-0 left-0 right-0 z-50'>
       <h1 className='text-2xl font-[600] cursor-pointer'>Juvens.dev</h1>
       <ul className='flex text-lg font-[500] bg-white/30 backdrop-blur-md rounded-4xl'>
         <li className='cursor-pointer rounded-l-full hover:bg-white/15 py-2 px-5 transition duration-200'>About</li>

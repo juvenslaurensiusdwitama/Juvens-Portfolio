@@ -5,7 +5,7 @@ import gmail from '../assets/gmail.png'
 
 const Introduction = () => {
   return (
-    <div className={`flex justify-between items-center h-dvh gap-10 bg-center bg-cover px-[350px] text-white`}>
+    <div className={`flex justify-between items-center h-dvh gap-10 bg-center bg-cover text-white`}>
       <div className='flex flex-col gap-4 max-w-[700px]'>
         <div className='flex flex-col gap-6'>
           <h1 className='text-7xl'>Hello, I'm Juvens!</h1>
@@ -18,7 +18,7 @@ const Introduction = () => {
           <img src={gmail} alt="" className='h-[64px] cursor-pointer hover:opacity-50 transition duration-200'/>
         </ul>
       </div>
-      <img src={pp} alt="" className='h-[700px]'/>
+      <img src={pp} alt="" className='h-[500px]'/>
     </div>
   )
 }

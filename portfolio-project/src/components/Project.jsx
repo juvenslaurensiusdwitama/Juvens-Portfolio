@@ -31,7 +31,7 @@ const Project = ({ data }) => {
                             </Badge>
                         }
                     </div>
-                    <p className="text-sm text-gray-300 min-h-[100px]">{data.description}</p>
+                    <p className="text-sm text-gray-300 min-h-[120px]">{data.description}</p>
                 </div>
                 <div className="flex justify-center">
                     {data.status === true ?

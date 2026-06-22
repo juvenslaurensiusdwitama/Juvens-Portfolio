@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-center bg-cover'>
       <h1 className='text-4xl text-white'>Past Projects</h1>
-      <div className='w-[1200px]'>
+      <div className='w-[1100px]'>
         <Carousel
           opts={{
             align: "start",

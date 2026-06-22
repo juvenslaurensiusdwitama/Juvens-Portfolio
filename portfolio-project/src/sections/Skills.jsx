@@ -1,90 +1,111 @@
 import Skill from '@/components/Skill'
 import React from 'react'
+import html from '../assets/html.png'
+import css from '../assets/css.png'
+import js from '../assets/js.png'
+import react from '../assets/react.png'
+import tailwind from '../assets/tailwind.png'
+import shadcn from '../assets/shadcn.png'
+import ts from '../assets/typescript.png'
+import nextjs from '../assets/next.png'
+import firebase from '../assets/firebase.png'
+import postman from '../assets/postman.png'
+import git from '../assets/git.png'
+import github2 from '../assets/github2.png'
+import vite from '../assets/vite.svg'
+import vercel from '../assets/vercel.svg'
+import figma from '../assets/figma.png'
 
 const Skills = () => {
 
   const datas = [
     {
-      icon: null,
+      icon: html,
       name: 'HTML',
-      type: '',
+      type: 'Markup Language',
     },
     {
-      icon: null,
+      icon: css,
       name: 'CSS',
-      type: '',
+      type: 'Style Sheet Language',
     },
     {
-      icon: null,
+      icon: js,
       name: 'JavaScript',
-      type: '',
+      type: 'Programming Language',
     },
     {
-      icon: null,
+      icon: react,
       name: 'React JS',
-      type: '',
+      type: 'Library',
     },
     {
-      icon: null,
+      icon: tailwind,
       name: 'Tailwind CSS',
-      type: '',
+      type: 'Framework',
     },
     {
-      icon: null,
+      icon: shadcn,
       name: 'Shadcn UI',
-      type: '',
+      type: 'Component Library',
     },
     {
-      icon: null,
+      icon: ts,
       name: 'TypeScript',
-      type: '',
+      type: 'Programming Language',
     },
     {
-      icon: null,
+      icon: nextjs,
       name: 'Next JS',
-      type: '',
+      type: 'Framework',
     },
     {
-      icon: null,
+      icon: firebase,
       name: 'Firebase',
-      type: '',
+      type: 'Backend Service',
     },
     {
-      icon: null,
+      icon: postman,
       name: 'Postman API',
-      type: '',
+      type: 'Testing Tool',
     },
     {
-      icon: null,
+      icon: git,
       name: 'GIT',
-      type: '',
+      type: 'Version Control System',
     },
     {
-      icon: null,
+      icon: github2,
       name: 'GitHub',
-      type: '',
+      type: 'Version Control Platform',
     },
     {
-      icon: null,
+      icon: vite,
       name: 'Vite',
-      type: '',
+      type: 'Build Tool',
     },
     {
-      icon: null,
+      icon: vercel,
       name: 'Vercel',
-      type: '',
+      type: 'Deployment Platform',
     },
     {
-      icon: null,
+      icon: figma,
       name: 'Figma',
-      type: '',
+      type: 'Design Tool',
     },
   ]
 
   return (
-    <div className='flex justify-center items-center h-dvh'>
-      <Skill/>
+    <div className='flex flex-col justify-center items-center gap-10 h-dvh'>
+      <h1 className='text-center text-white text-4xl'>My Skills</h1>
+      <div className='grid grid-cols-4 gap-5 w-fit'>
+        {datas.map((data, index) => (
+          <Skill key={index} data={data} />
+        ))}
+      </div>
     </div>
+
   )
 }
 
