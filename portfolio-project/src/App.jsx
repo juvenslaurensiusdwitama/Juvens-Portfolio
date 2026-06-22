@@ -10,7 +10,7 @@ import fullbg from './assets/fullbg.png'
 function App() {
 
   return (
-    <div className='font-display relative bg-center bg-cover'
+    <div className='font-display relative bg-center bg-cover px-[200px]'
       style={{ backgroundImage: `url(${fullbg})` }}
     >
       <Header/>

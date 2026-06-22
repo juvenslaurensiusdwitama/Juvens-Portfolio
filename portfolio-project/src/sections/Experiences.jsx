@@ -37,7 +37,7 @@ const Experiences = () => {
   
 
   return (
-    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-cover bg-center px-[350px] text-white'>
+    <div className='flex flex-col gap-10 justify-center items-center h-dvh text-white'>
       <h1 className='text-4xl'>My Experiences</h1>
       {datas.map((data, i) =>(
         <Experience key={i} data={data} />
