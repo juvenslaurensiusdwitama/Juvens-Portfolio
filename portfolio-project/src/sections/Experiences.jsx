@@ -17,7 +17,7 @@ const Experiences = () => {
     },
     {
       image: schooltech,
-      company: 'PT Hans Business (School Tech Indonesia)',
+      company: 'SchoolTech Indonesia',
       position: 'IT Front-End Developer',
       type: 'Internship',
       startDate: 'Aug 2024',
@@ -26,7 +26,7 @@ const Experiences = () => {
     },
     {
       image: alterra,
-      company: 'PT Marka Kreasi Persada (Alterra Academy)',
+      company: 'Alterra Academy',
       position: 'Front-End Engineer With ReactJS',
       type: 'SIB Kampus Merdeka',
       startDate: 'Feb 2024',
@@ -37,11 +37,13 @@ const Experiences = () => {
   
 
   return (
-    <div className='flex flex-col gap-10 justify-center items-center h-dvh text-white'>
-      <h1 className='text-4xl'>My Experiences</h1>
-      {datas.map((data, i) =>(
-        <Experience key={i} data={data} />
-      ))}
+    <div className='flex flex-col items-center justify-center gap-10 h-dvh text-white'>
+      <h1 className='text-4xl font-semibold'>My Experiences</h1>
+      <div className='flex flex-col gap-12 justify-center items-center max-w-[1200px]'>
+        {datas.map((data, i) =>(
+          <Experience key={i} data={data} />
+        ))}
+      </div>
     </div>
   )
 }
