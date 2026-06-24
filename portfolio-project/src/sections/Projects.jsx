@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-center bg-cover' id='projects'>
       <h1 className='text-4xl text-white font-semibold'>Past Projects</h1>
-      <div className='w-[1100px]'>
+      <div className='w-[1200px]'>
         <Carousel
           opts={{
             align: "start",
@@ -77,8 +77,8 @@ const Projects = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="cursor-pointer bg-white/20 backdrop-blur-md border-0 hover:bg-white/40" />
-          <CarouselNext className="cursor-pointer bg-white/20 backdrop-blur-md border-0 hover:bg-white/40" />
+          <CarouselPrevious className="cursor-pointer bg-white/25 backdrop-blur-md border-0 hover:bg-white/35 text-white/70 hover:text-white/70" />
+          <CarouselNext className="cursor-pointer bg-white/25 backdrop-blur-md border-0 hover:bg-white/35 text-white/70 hover:text-white/70" />
         </Carousel>
       </div>
     </div>
