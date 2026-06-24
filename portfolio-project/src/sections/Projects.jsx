@@ -60,7 +60,7 @@ const Projects = () => {
   ]
 
   return (
-    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-center bg-cover'>
+    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-center bg-cover' id='projects'>
       <h1 className='text-4xl text-white font-semibold'>Past Projects</h1>
       <div className='w-[1100px]'>
         <Carousel
