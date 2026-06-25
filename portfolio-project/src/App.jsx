@@ -8,10 +8,9 @@ import Footer from "./sections/Footer";
 import fullbg from './assets/fullbg.png'
 
 function App() {
-
-
   return (
-    <div className='font-display relative bg-center bg-cover'
+    <div 
+      className='font-display relative w-full min-h-screen bg-center bg-cover'
       style={{ backgroundImage: `url(${fullbg})` }}
     >
       <Header />

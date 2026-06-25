@@ -1,11 +1,4 @@
 import Project from '../components/Project'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import movieverse from "../assets/movieverse.png"
 import reactrealm from "../assets/reactrealm.png"
 import giat from "../assets/giat.png"
@@ -32,7 +25,7 @@ const Projects = () => {
     {
       image: schooltechh,
       projectName: 'Intern Pro',
-      description: 'Collaborated with PMs, backend engineers, and UI/UX designers to deliver a responsive school management platform.  Implemented core management features, including role, partner, mentor, and activity management.',
+      description: 'Collaborated with PMs, backend engineers, and UI/UX designers to deliver a responsive school management platform. Implemented core management features, including role, partner, mentor, and activity management.',
       status: false,
       link: null
     },
@@ -60,26 +53,15 @@ const Projects = () => {
   ]
 
   return (
-    <div className='flex flex-col gap-10 justify-center items-center h-dvh bg-center bg-cover' id='projects'>
+    <div 
+      className='h-dvh flex flex-col justify-center items-center gap-10' 
+      id='projects'
+    >
       <h1 className='text-4xl text-white font-semibold'>Past Projects</h1>
-      <div className='w-[1200px]'>
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full"
-        >
-          <CarouselContent>
-            {datas.reverse().map((data, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <Project data={data} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="cursor-pointer bg-white/25 backdrop-blur-md border-0 hover:bg-white/35 text-white/70 hover:text-white/70" />
-          <CarouselNext className="cursor-pointer bg-white/25 backdrop-blur-md border-0 hover:bg-white/35 text-white/70 hover:text-white/70" />
-        </Carousel>
+      <div className='w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 pr-1'>
+        {datas.toReversed().map((data, index) => (
+          <Project key={index} data={data} />
+        ))}
       </div>
     </div>
   )
