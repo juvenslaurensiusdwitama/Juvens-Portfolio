@@ -97,7 +97,9 @@ const Skills = () => {
   ]
 
   return (
-    <div className='flex flex-col justify-center items-center gap-10 h-dvh' id='skills'>
+    <div 
+      className='flex flex-col justify-center items-center gap-10 h-dvh bg-center bg-cover' id='skills'
+    >
       <h1 className='text-center text-white text-4xl font-semibold'>My Skills</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full max-w-[1150px] justify-center'>
         {datas.map((data, index) => (

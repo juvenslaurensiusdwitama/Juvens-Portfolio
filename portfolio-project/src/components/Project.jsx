@@ -1,56 +1,59 @@
-import {
-    CarouselItem,
-} from "@/components/ui/carousel"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import link from "../assets/external-link.png"
 
 const Project = ({ data }) => {
     return (
-        <div className=" text-white flex flex-col gap-4 p-2">
-            {data.image ?
-                <img
-                    src={data.image}
-                    className="w-full rounded-md h-[300px] object-cover object-center"
-                />
-                :
-                <div className="rounded-md w-full h-[300px] flex justify-center items-center bg-white/30 backdrop-blur-md">
-                    <span>Not Available</span>
-                </div>
-            }
-            <div className="flex flex-col">
-                <div className="flex flex-col gap-1 justify-center">
-                    <div className="flex justify-between items-center">
-                        <span className="font-medium text-white text-lg">{data.projectName}</span>
-                        {data.status === true ?
-                            <Badge className="bg-green-950 text-green-300 border-green-700">
-                                Active
-                            </Badge>
-                            : <Badge className="bg-red-950 text-red-300 border-red-700">
-                                Inactive
-                            </Badge>
-                        }
+        <div className="flex items-center gap-4 text-white border-b border-white/10 pb-3">
+            <div className="w-[250px] h-full rounded-lg overflow-hidden border border-white/10">
+                {data.image ? (
+                    <img
+                        src={data.image}
+                        alt={data.projectName}
+                        className="w-full h-full object-cover object-center"
+                    />
+                ) : (
+                    <div className="w-full h-full flex justify-center items-center text-white/30 text-xs font-medium">
+                        N/A
                     </div>
-                    <p className="text-sm text-white/80 min-h-[120px]">{data.description}</p>
+                )}
+            </div>
+            <div className="flex flex-col gap-2 flex-1">
+                <div className="flex items-center gap-2 justify-between">
+                    <h2 className="font-semibold text-white text-xl truncate">
+                        {data.projectName}
+                    </h2>
+                    {data.status === true ? (
+                        <Badge className="bg-green-950 text-green-300 border-green-700 text-[10px] px-1.5 ">
+                            Active
+                        </Badge>
+                    ) : (
+                        <Badge className="bg-red-950 text-red-300 border-red-700 text-[10px] px-1.5 ">
+                            Inactive
+                        </Badge>
+                    )}
                 </div>
-                <div className="flex justify-center">
-                    {data.status === true ?
+                <p className="text-white/70 pr-2 text-sm">
+                    {data.description}
+                </p>
+                <div className="pt-1">
+                    {data.status === true ? (
                         <a
                             href={data.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full"
+                            className="inline-block"
                         >
-                            <Button className="w-full cursor-pointer bg-white/15 backdrop-blur-md border-0 hover:bg-white/25 text-white/90 truncate flex gap-2">
+                            <Button className="h-7 cursor-pointer bg-white/10 backdrop-blur-md border-0 hover:bg-white/25 text-white/90 text-xs flex gap-1.5 px-3 py-1 rounded-md">
                                 <span>Go to Project</span>
-                                <img src={link} alt="" className="h-[14px]"/>
+                                <img src={link} alt="" className="h-[10px] w-[10px]" />
                             </Button>
                         </a>
-                        :
-                        <Button className="w-full backdrop-blur-md border-0 truncate bg-black/40 hover:bg-black/40">
-                            <span className="text-white/60">Not Available</span>
+                    ) : (
+                        <Button className="h-7 backdrop-blur-md border-0 bg-black/40 hover:bg-black/40 text-white/40 text-xs px-3 py-1 rounded-md" disabled>
+                            <span>Not Available</span>
                         </Button>
-                    }
+                    )}
                 </div>
             </div>
         </div>

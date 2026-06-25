@@ -37,11 +37,13 @@ const Experiences = () => {
   
 
   return (
-    <div className='flex flex-col items-center justify-center gap-10 h-dvh text-white' id='experiences'>
+    <div 
+      className='relative flex flex-col items-center justify-center gap-10 h-dvh text-white' id='experiences'
+    >
       <h1 className='text-4xl font-semibold'>My Experiences</h1>
       <div className='flex flex-col gap-14 justify-center items-center max-w-[1200px]'>
         {datas.map((data, i) =>(
-          <Experience key={i} data={data} />
+          <Experience key={i} data={data}/>
         ))}
       </div>
     </div>
