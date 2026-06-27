@@ -5,7 +5,7 @@ const Experience = ({ data }) => {
 	const { image, company, position, type, startDate, endDate, descriptions } = data
 	return (
 		<div className="flex gap-6">
-			<Separator orientation="vertical" className='bg-white/15' />
+			<Separator orientation="vertical" className='bg-white/20' />
 			<div className='w-full flex flex-col gap-2'>
 				<div className='flex justify-between items-start'>
 					<h2 className="flex items-center gap-4">
@@ -14,8 +14,8 @@ const Experience = ({ data }) => {
 							alt={company}
 							className="h-14 w-22 rounded-md object-cover object-center"
 						/>
-						<div className="flex flex-col justify-center">
-							<span className="font-medium text-2xl">{company}</span>
+						<div className="flex flex-col justify-center gap-1">
+							<span className="font-semibold text-xl">{company}</span>
 							<p className="text-base text-white/70">
 								{position}
 								<span className="mx-2">•</span>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Experience from '../components/Experience'
 import ramu from '../assets/ramu.png'
-import alterra from '../assets/alterra.jpeg'
+import alterra from '../assets/alterra.png'
 import schooltech from '../assets/schooltech.png'
 
 const Experiences = () => {
@@ -40,7 +40,7 @@ const Experiences = () => {
     <div 
       className='relative flex flex-col items-center justify-center gap-10 min-h-screen text-white' id='experiences'
     >
-      <h1 className='text-4xl font-semibold'>My Experiences</h1>
+      <h1 className='text-3xl font-semibold'>My Experiences</h1>
       <div className='flex flex-col gap-14 justify-center items-center max-w-[1200px]'>
         {datas.map((data, i) =>(
           <Experience key={i} data={data}/>
