@@ -38,7 +38,7 @@ const Experiences = () => {
 
   return (
     <div 
-      className='relative flex flex-col items-center justify-center gap-10 h-dvh text-white' id='experiences'
+      className='relative flex flex-col items-center justify-center gap-10 min-h-screen text-white' id='experiences'
     >
       <h1 className='text-4xl font-semibold'>My Experiences</h1>
       <div className='flex flex-col gap-14 justify-center items-center max-w-[1200px]'>
