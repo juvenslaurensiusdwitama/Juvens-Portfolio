@@ -25,14 +25,14 @@ const Projects = () => {
     {
       image: schooltechh,
       projectName: 'Intern Pro',
-      description: 'Collaborated with PMs, backend engineers, and UI/UX designers to deliver a responsive school management platform. Implemented core management features, including role, partner, mentor, and activity management.',
+      description: 'Collaborated with PMs, backend engineers, and UI/UX designers to deliver a responsive school management platform. Implemented core features, including role, partner, mentor, and activity management.',
       status: false,
       link: null
     },
     {
       image: bmusic,
       projectName: 'B Music Studio',
-      description: 'Developed a custom booking system and company profile for BMusicStudio, streamlining studio reservations and improving customer experience.',
+      description: 'Developed a custom booking system and company profile for BMusicStudio, streamlining studio reservations and improving overall customer experience using modern technologies.',
       status: false,
       link: null
     },
@@ -57,8 +57,8 @@ const Projects = () => {
       className='min-h-screen flex flex-col justify-center items-center gap-10' 
       id='projects'
     >
-      <h1 className='text-4xl text-white font-semibold'>Past Projects</h1>
-      <div className='w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 pr-1'>
+      <h1 className='text-3xl text-white font-semibold'>Past Projects</h1>
+      <div className='w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 pr-1'>
         {datas.toReversed().map((data, index) => (
           <Project key={index} data={data} />
         ))}

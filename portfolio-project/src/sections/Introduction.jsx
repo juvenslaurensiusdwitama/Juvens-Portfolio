@@ -7,12 +7,12 @@ import gmail from '../assets/gmail.png'
 const Introduction = () => {
   return (
     <div 
-      className='relative flex justify-center h-dvh bg-cover bg-center' id='introduction'
+      className='relative flex justify-center min-h-screen bg-cover bg-center' id='introduction'
     >
       <div className={`flex justify-between items-center text-white w-full max-w-[1200px]`}>
         <div className='flex flex-col gap-3 max-w-[610px]'>
           <h1 className='text-7xl font-bold'>Hello, I'm Juvens!</h1>
-          <h2 className='text-2xl text-white font-semibold mt-2'>A Full-Stack Web Developer.</h2>
+          <h2 className='text-2xl text-white font-semibold mt-2 text-white/90'>A Full-Stack Web Developer.</h2>
           <p className='text-lg text-white/70 mb-3'>Architecting scalable backend systems and crafting intuitive, pixel-perfect interfaces. I build full-stack web applications where high-performance engineering meets exceptional user experience.</p>
           <button className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer w-fit'>
             <div className="flex justify-center items-center gap-2 hover:bg-white/10 rounded-md py-2 px-5 transition duration-200">
