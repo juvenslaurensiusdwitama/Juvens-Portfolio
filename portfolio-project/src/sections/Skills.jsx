@@ -11,9 +11,9 @@ import nextjs from '../assets/next.png'
 import firebase from '../assets/firebase.png'
 import postman from '../assets/postman.png'
 import git from '../assets/git.png'
-import github2 from '../assets/github2.png'
-import vite from '../assets/vite.svg'
-import vercel from '../assets/vercel.svg'
+import github3 from '../assets/github3.png'
+import vite from '../assets/vite.png'
+import vercel from '../assets/vercel.png'
 import figma from '../assets/figma.png'
 
 const Skills = () => {
@@ -45,11 +45,6 @@ const Skills = () => {
       type: 'Framework',
     },
     {
-      icon: shadcn,
-      name: 'Shadcn UI',
-      type: 'Component Library',
-    },
-    {
       icon: ts,
       name: 'TypeScript',
       type: 'Programming Language',
@@ -58,6 +53,16 @@ const Skills = () => {
       icon: nextjs,
       name: 'Next JS',
       type: 'Framework',
+    },
+    {
+      icon: git,
+      name: 'GIT',
+      type: 'Version Control System',
+    },
+    {
+      icon: github3,
+      name: 'GitHub',
+      type: 'Version Control Platform',
     },
     {
       icon: firebase,
@@ -70,16 +75,6 @@ const Skills = () => {
       type: 'Testing Tool',
     },
     {
-      icon: git,
-      name: 'GIT',
-      type: 'Version Control System',
-    },
-    {
-      icon: github2,
-      name: 'GitHub',
-      type: 'Version Control Platform',
-    },
-    {
       icon: vite,
       name: 'Vite',
       type: 'Build Tool',
@@ -90,6 +85,11 @@ const Skills = () => {
       type: 'Deployment Platform',
     },
     {
+      icon: shadcn,
+      name: 'Shadcn UI',
+      type: 'Component Library',
+    },
+    {
       icon: figma,
       name: 'Figma',
       type: 'Design Tool',
@@ -98,7 +98,7 @@ const Skills = () => {
 
   return (
     <div 
-      className='flex flex-col justify-center items-center gap-10 h-dvh bg-center bg-cover' id='skills'
+      className='flex flex-col justify-center items-center gap-10 min-h-screen bg-center bg-cover' id='skills'
     >
       <h1 className='text-center text-white text-4xl font-semibold'>My Skills</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full max-w-[1150px] justify-center'>
