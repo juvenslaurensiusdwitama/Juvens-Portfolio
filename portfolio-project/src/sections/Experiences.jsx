@@ -34,16 +34,16 @@ const Experiences = () => {
       descriptions: 'As the lead of the Front-end/React division for the capstone project, I developed the admin dashboard along with the manage products and product measurement data features, while collaborating closely with other divisions. In my personal projects, I built user authentication and authorization, implemented RESTful API for comments, and developed search, save, and AI chatbot features.',
     },
   ]
-  
 
   return (
-    <div 
-      className='relative flex flex-col items-center justify-center gap-10 min-h-screen text-white' id='experiences'
+    <div
+      className='relative flex flex-col justify-center items-center gap-10 min-h-screen text-white '
+      id='experiences'
     >
       <h1 className='text-3xl font-semibold'>My Experiences</h1>
-      <div className='flex flex-col gap-14 justify-center items-center max-w-[1200px]'>
-        {datas.map((data, i) =>(
-          <Experience key={i} data={data}/>
+      <div className='flex flex-col gap-4 justify-center items-center w-full max-w-[1200px]'>
+        {datas.map((data, i) => (
+          <Experience key={i} data={data} />
         ))}
       </div>
     </div>

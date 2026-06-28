@@ -58,7 +58,7 @@ const Projects = () => {
       id='projects'
     >
       <h1 className='text-3xl text-white font-semibold'>Past Projects</h1>
-      <div className='w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 pr-1'>
+      <div className='w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 pr-1'>
         {datas.toReversed().map((data, index) => (
           <Project key={index} data={data} />
         ))}
