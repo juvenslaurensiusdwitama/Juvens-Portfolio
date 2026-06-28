@@ -17,17 +17,17 @@ const Header = () => {
         <div className='flex text-white justify-between items-center w-full max-w-[1200px] mt-6'>
           <h1 className='text-2xl font-[600] cursor-pointer' onClick={() => scrollToSection('introduction')}>Juvens.dev</h1>
           <div className='flex text-white justify-center w-full max-w-[1200px]'>
-            <ul className='flex text-lg font-[500] bg-white/30 backdrop-blur-md rounded-4xl'>
-              <li className='cursor-pointer rounded-l-full hover:bg-white/15 py-2 px-5 transition duration-200' onClick={() => scrollToSection('introduction')}>About</li>
-              <li className='border border-white/25'></li>
-              <li className='cursor-pointer hover:bg-white/15 py-2 px-5 transition duration-200' onClick={() => scrollToSection('experiences')}>Experiences</li>
-              <li className='border border-white/25'></li>
-              <li className='cursor-pointer hover:bg-white/15 py-2 px-5 transition duration-200' onClick={() => scrollToSection('projects')}>Projects</li>
-              <li className='border border-white/25'></li>
-              <li className='cursor-pointer rounded-r-full hover:bg-white/15 py-2 px-5 transition duration-200' onClick={() => scrollToSection('skills')}>Skills</li>
+            <ul className='flex text-lg font-[500] bg-white/20 backdrop-blur-md rounded-4xl'>
+              <li className='cursor-pointer rounded-l-full hover:bg-white/10 py-2 px-5 transition duration-200' onClick={() => scrollToSection('introduction')}>About</li>
+              <li className='border border-white/15'></li>
+              <li className='cursor-pointer hover:bg-white/10 py-2 px-5 transition duration-200' onClick={() => scrollToSection('experiences')}>Experiences</li>
+              <li className='border border-white/15'></li>
+              <li className='cursor-pointer hover:bg-white/10 py-2 px-5 transition duration-200' onClick={() => scrollToSection('projects')}>Projects</li>
+              <li className='border border-white/15'></li>
+              <li className='cursor-pointer rounded-r-full hover:bg-white/10 py-2 px-5 transition duration-200' onClick={() => scrollToSection('skills')}>Skills</li>
             </ul>
           </div>
-          <button className='bg-white/30 backdrop-blur-md rounded-md cursor-pointer'>
+          <button className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer'>
             <div className="flex items-center justify-center gap-2 hover:bg-white/15 rounded-md py-2 px-6 transition duration-200">
               <p className='text-lg font-[500] text-white'>Resume</p>
               <img src={download} alt="" className='h-[16px] font-[500]' />

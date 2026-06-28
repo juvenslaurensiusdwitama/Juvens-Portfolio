@@ -15,7 +15,7 @@ const Introduction = () => {
           <h2 className='text-2xl text-white font-semibold mt-2 text-white/90'>A Full-Stack Web Developer.</h2>
           <p className='text-lg text-white/70 mb-3'>Architecting scalable backend systems and crafting intuitive, pixel-perfect interfaces. I build full-stack web applications where high-performance engineering meets exceptional user experience.</p>
           <button className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer w-fit'>
-            <div className="flex justify-center items-center gap-2 hover:bg-white/10 rounded-md py-2 px-5 transition duration-200">
+            <div className="flex justify-center items-center gap-2 hover:bg-white/15 rounded-md py-2 px-5 transition duration-200">
               <p className='text-lg font-[500] text-white'>Resume</p>
               <img src={download} alt="" className='h-[16px] font-[500]' />
             </div>

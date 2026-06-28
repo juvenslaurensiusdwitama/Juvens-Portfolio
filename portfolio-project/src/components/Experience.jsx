@@ -1,36 +1,37 @@
-import { Separator } from "@/components/ui/separator"
+// CHANGED: removed Separator and Badge imports — no longer used
 import { Badge } from "@/components/ui/badge"
 
 const Experience = ({ data }) => {
 	const { image, company, position, type, startDate, endDate, descriptions } = data
+
 	return (
-		<div className="flex gap-6">
-			<Separator orientation="vertical" className='bg-white/20' />
-			<div className='w-full flex flex-col gap-2'>
-				<div className='flex justify-between items-start'>
-					<h2 className="flex items-center gap-4">
-						<img
-							src={image}
-							alt={company}
-							className="h-14 w-22 rounded-md object-cover object-center"
-						/>
-						<div className="flex flex-col justify-center gap-1">
-							<span className="font-semibold text-xl">{company}</span>
-							<p className="text-base text-white/70">
-								{position}
-								<span className="mx-2">•</span>
-								{type}
-							</p>
-						</div>
-					</h2>
-					<Badge className="border border-white/10 bg-white/10 px-3 py-1 backdrop-blur-md">
-						<span className="text-xs font-medium text-white/80">
-							{startDate} - {endDate}
-						</span>
-					</Badge>
+		// CHANGED: replaced outer flex+Separator layout with a self-contained card
+		// Added: dark fill, border, left accent line, rounded corners, hover effect
+		<div className="w-full rounded-[14px] border border-white/10 border-l-2 border-l-white/25 bg-white/[0.04] px-6 py-5.5 transition duration-300 hover:border-l-white/35 hover:border-white/15 hover:bg-white/[0.07]">
+			<div className="flex items-center justify-between mb-3">
+				<div className="flex items-center gap-3">
+					<img
+						src={image}
+						alt={company}
+						className="h-12 w-20 rounded-[10px] object-cover object-center border border-white/10 bg-white/8"
+					/>
+					<div className="flex flex-col gap-0.5">
+						<span className="font-semibold text-lg">{company}</span>
+						<p className="text-sm font-medium text-white/60 flex items-center gap-1.5">
+							{position}
+							<span className="inline-block w-1 h-1 rounded-full bg-white/25" />
+							{type}
+						</p>
+					</div>
 				</div>
-				<p className="mt-2 text-white/70 leading-7">{descriptions}</p>
+				<span className="text-xs font-medium text-white/60 bg-white/[0.06] border border-white/10 px-3 py-1 rounded-full whitespace-nowrap">
+					{startDate} – {endDate}
+				</span>
 			</div>
+
+			<div className="h-px bg-white/[0.08] mb-2" />
+
+			<p className="text-sm text-white/60 leading-7">{descriptions}</p>
 		</div>
 	)
 }
