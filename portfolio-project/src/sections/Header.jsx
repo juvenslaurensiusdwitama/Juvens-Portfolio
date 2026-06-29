@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <div className="flex justify-center fixed left-0 right-0 top-0 z-50">
-        <div className='flex text-white justify-between items-center w-full max-w-[1200px] mt-6'>
+        <div className='flex text-white justify-between items-center w-full max-w-[1300px] px-[50px] mt-6'>
           <h1 className='text-2xl font-[600] cursor-pointer' onClick={() => scrollToSection('introduction')}>Juvens.dev</h1>
           <div className='flex text-white justify-center w-full max-w-[1200px]'>
             <ul className='flex text-lg font-[500] bg-white/20 backdrop-blur-md rounded-4xl'>

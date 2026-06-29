@@ -4,7 +4,6 @@ import Introduction from "./sections/Introduction";
 import Experiences from "./sections/Experiences";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
-import Footer from "./sections/Footer";
 import fullbg from './assets/fullbg.png'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
       <Experiences />
       <Projects />
       <Skills />
-      <Footer />
     </div>
   )
 }
