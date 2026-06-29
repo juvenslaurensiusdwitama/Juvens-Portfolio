@@ -7,7 +7,7 @@ const Experience = ({ data }) => {
 	return (
 		// CHANGED: replaced outer flex+Separator layout with a self-contained card
 		// Added: dark fill, border, left accent line, rounded corners, hover effect
-		<div className="w-full rounded-[14px] border border-white/10 border-l-2 border-l-white/25 bg-white/[0.04] px-6 py-5.5 transition duration-300 hover:border-l-white/35 hover:border-white/15 hover:bg-white/[0.07]">
+		<div className="w-full rounded-[14px] border border-white/10 border-l-2 border-l-white/25 bg-white/[0.04] px-6 py-5.5 transition duration-300 hover:border-l-white/35 hover:border-white/15 hover:bg-white/[0.08]">
 			<div className="flex items-center justify-between mb-3">
 				<div className="flex items-center gap-3">
 					<img

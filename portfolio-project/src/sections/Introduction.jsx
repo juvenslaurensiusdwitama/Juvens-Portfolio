@@ -9,7 +9,7 @@ const Introduction = () => {
     <div 
       className='relative flex justify-center min-h-screen bg-cover bg-center' id='introduction'
     >
-      <div className={`flex justify-between items-center text-white w-full max-w-[1200px]`}>
+      <div className={`flex justify-between items-center text-white w-full max-w-[1300px] px-[50px]`}>
         <div className='flex flex-col gap-3 max-w-[610px]'>
           <h1 className='text-7xl font-bold'>Hello, I'm Juvens!</h1>
           <h2 className='text-2xl text-white font-semibold mt-2 text-white/90'>A Full-Stack Web Developer.</h2>

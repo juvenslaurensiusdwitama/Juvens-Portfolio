@@ -4,7 +4,7 @@ import link from "../assets/external-link.png"
 import block from "../assets/block.png"
 
 const Project = ({ data }) => {
-    const select = 'hover:-translate-y-1 hover:border-white/10 hover:bg-white/5 hover:shadow-[0_0_5px_rgba(255,255,255,0.06)]'
+    const select = 'hover:-translate-y-1 hover:border-white/15 hover:bg-white/15 hover:shadow-[0_0_20px_rgba(255,255,255,0.06)]'
 
     return (
         <a

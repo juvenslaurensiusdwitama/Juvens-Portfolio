@@ -41,7 +41,7 @@ const Experiences = () => {
       id='experiences'
     >
       <h1 className='text-3xl font-semibold'>My Experiences</h1>
-      <div className='flex flex-col gap-4 justify-center items-center w-full max-w-[1200px]'>
+      <div className='flex flex-col gap-4 justify-center items-center w-full max-w-[1300px] px-[50px]'>
         {datas.map((data, i) => (
           <Experience key={i} data={data} />
         ))}
