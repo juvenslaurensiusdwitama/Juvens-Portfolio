@@ -54,7 +54,7 @@ const Projects = () => {
 
   return (
     <div 
-      className='min-h-screen flex flex-col items-center gap-10 pt-25' 
+      className='flex flex-col items-center gap-10 pt-25' 
       id='projects'
     >
       <h1 className='text-3xl text-white font-semibold'>Past Projects</h1>
