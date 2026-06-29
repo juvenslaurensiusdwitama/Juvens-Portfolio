@@ -98,10 +98,10 @@ const Skills = () => {
 
   return (
     <div 
-      className='flex flex-col items-center gap-10 min-h-screen bg-center bg-cover pt-25' id='skills'
+      className='flex flex-col items-center xl:gap-10 lg:gap-8 md:gap-6 min-h-screen bg-center bg-cover pt-25' id='skills'
     >
-      <h1 className='text-center text-white text-3xl font-semibold'>My Skills</h1>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-[1300px] px-[50px] justify-center'>
+      <h1 className='text-center text-white xl:text-3xl lg:text-2xl md:text-xl font-semibold'>My Skills</h1>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px] md:max-w-[700px] justify-center'>
         {datas.map((data, index) => (
           <Skill key={index} data={data} />
         ))}
