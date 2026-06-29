@@ -7,9 +7,9 @@ import gmail from '../assets/gmail.png'
 const Introduction = () => {
   return (
     <div 
-      className='relative flex justify-center min-h-screen bg-cover bg-center' id='introduction'
+      className='relative flex justify-center' id='introduction'
     >
-      <div className={`flex justify-between items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px]`}>
+      <div className={`min-h-screen flex justify-between items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px]`}>
         <div className='flex flex-col xl:gap-3 lg:gap-2 xl:max-w-[610px] lg:max-w-[510px]'>
           <h1 className='xl:text-7xl lg:text-6xl font-bold'>Hello, I'm Juvens!</h1>
           <h2 className='xl:text-2xl lg:text-xl text-white font-semibold mt-2 text-white/90'>A Full-Stack Web Developer.</h2>
