@@ -22,7 +22,7 @@ const Project = ({ data }) => {
                             className="w-[200px] h-[150px] object-cover object-center"
                         />
                     ) : (
-                        <div className="w-[200px] h-[150px] flex justify-center items-center text-white/30 text-xs font-medium">
+                        <div className="w-[200px] h-[150px] flex justify-center items-center bg-black/40 text-white/30 text-xs font-medium">
                             N/A
                         </div>
                     )}
