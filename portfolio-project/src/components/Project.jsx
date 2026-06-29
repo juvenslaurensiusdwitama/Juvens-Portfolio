@@ -13,21 +13,21 @@ const Project = ({ data }) => {
             rel="noopener noreferrer"
             className="inline-block"
         >
-            <div className={`flex items-center gap-4 text-white p-4 rounded-xl border border-transparent p-5 transition-all duration-300 ${data.link ? select : null}`}>
-                <div className="rounded-lg overflow-hidden border border-white/10">
+            <div className={`flex xl:flex-row lg:flex-col gap-4 text-white rounded-xl border border-transparent lg:p-3 xl:p-5 transition-all duration-300 ${data.link ? select : null}`}>
+                <div className="overflow-hidden ">
                     {data.image ? (
                         <img
                             src={data.image}
                             alt={data.projectName}
-                            className="w-[200px] h-[150px] object-cover object-center"
+                            className="rounded-lg border border-white/10 xl:w-[200px] xl:h-[150px] lg:w-full lg:h-[300px] object-cover object-center"
                         />
                     ) : (
-                        <div className="w-[200px] h-[150px] flex justify-center items-center bg-black/40 text-white/30 text-xs font-medium">
+                        <div className="rounded-lg border border-white/10 xl:w-[200px] xl:h-[150px] lg:w-full lg:h-[300px] flex justify-center items-center bg-black/40 text-white/30 text-xs font-medium">
                             N/A
                         </div>
                     )}
                 </div>
-                <div className="flex flex-col justify-center gap-1 flex-1">
+                <div className="flex flex-col gap-1 flex-1">
                     <div className="flex items-center justify-between">
                         <h2 className="font-semibold text-lg text-white tracking-tight flex items-center">
                             {data.projectName}
@@ -45,7 +45,7 @@ const Project = ({ data }) => {
                             </Badge>
                         )}
                     </div>
-                    <p className="text-white/60 pr-1 text-sm leading-6 ">
+                    <p className="text-white/60 pr-1 text-sm xl:leading-6 lg:leading-5">
                         {data.description}
                     </p>
                 </div>

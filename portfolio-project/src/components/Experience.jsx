@@ -31,7 +31,7 @@ const Experience = ({ data }) => {
 
 			<div className="h-px bg-white/[0.08] mb-2" />
 
-			<p className="text-sm text-white/60 leading-7">{descriptions}</p>
+			<p className="text-sm text-white/60 xl:leading-7 lg:leading-6">{descriptions}</p>
 		</div>
 	)
 }
