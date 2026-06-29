@@ -98,7 +98,7 @@ const Skills = () => {
 
   return (
     <div 
-      className='flex flex-col justify-center items-center gap-10 min-h-screen bg-center bg-cover' id='skills'
+      className='flex flex-col items-center gap-10 min-h-screen bg-center bg-cover pt-25' id='skills'
     >
       <h1 className='text-center text-white text-3xl font-semibold'>My Skills</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-[1300px] px-[50px] justify-center'>

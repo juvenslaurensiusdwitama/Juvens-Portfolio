@@ -37,11 +37,11 @@ const Experiences = () => {
 
   return (
     <div
-      className='relative flex flex-col justify-center items-center gap-10 min-h-screen text-white '
+      className='relative flex flex-col items-center gap-10 min-h-screen text-white pt-25'
       id='experiences'
     >
       <h1 className='text-3xl font-semibold'>My Experiences</h1>
-      <div className='flex flex-col gap-4 justify-center items-center w-full max-w-[1300px] px-[50px]'>
+      <div className='flex flex-col gap-4 justify-center items-center w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px]'>
         {datas.map((data, i) => (
           <Experience key={i} data={data} />
         ))}
