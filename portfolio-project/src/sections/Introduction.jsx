@@ -6,7 +6,7 @@ import gmail from '../assets/gmail.png'
 
 const Introduction = () => {
   return (
-    <div 
+    <div
       className='relative flex justify-center' id='introduction'
     >
       <div className={`min-h-screen flex justify-between items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[1010px] lg:px-[50px] md:max-w-[700px] sm:max-w-[580px] pt-5`}>
@@ -14,12 +14,23 @@ const Introduction = () => {
           <h1 className='xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl font-bold'>Hello, I'm Juvens!</h1>
           <h2 className='xl:text-2xl md:text-xl sm:text-lg text-white font-semibold mt-2 text-white/90'>A Full-Stack Web Developer.</h2>
           <p className='xl:text-lg md:text-base text-sm lg:leading-7 md:leading-6 sm:leading-5 text-white/70 lg:mb-3 md:mb-1 sm:mb-2'>Architecting scalable backend systems and crafting intuitive, pixel-perfect interfaces. I build full-stack web applications where high-performance engineering meets exceptional user experience.</p>
-          <button className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer w-fit'>
+          <a href={encodeURI("/CV - Juvens Laurensius Dwitama.pdf")}
+            target="_blank"
+            rel="noopener noreferrer"
+            // download="Juvens Laurensius Dwitama - Resume.pdf"
+            className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer w-fit'>
             <div className="flex justify-center items-center gap-2 hover:bg-white/15 rounded-md md:py-2 lg:px-5 sm:py-2 sm:px-4 transition duration-200">
               <p className='xl:text-lg md:text-base text-sm font-[500] text-white'>Resume</p>
               <img src={download} alt="" className='h-[16px] font-[500]' />
             </div>
-          </button>
+          </a>
+
+          {/* <button className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer w-fit'>
+            <div className="flex justify-center items-center gap-2 hover:bg-white/15 rounded-md md:py-2 lg:px-5 sm:py-2 sm:px-4 transition duration-200">
+              <p className='xl:text-lg md:text-base text-sm font-[500] text-white'>Resume</p>
+              <img src={download} alt="" className='h-[16px] font-[500]' />
+            </div>
+          </button> */}
         </div>
         <div className='flex lg:flex-row sm:flex-col justify-center items-center md:gap-6 sm:gap-4'>
           <img
