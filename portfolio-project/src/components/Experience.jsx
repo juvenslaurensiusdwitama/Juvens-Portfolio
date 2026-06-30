@@ -16,22 +16,22 @@ const Experience = ({ data }) => {
 						className="h-12 w-20 rounded-[10px] object-cover object-center border border-white/10 bg-white/8"
 					/>
 					<div className="flex flex-col gap-0.5">
-						<span className="font-semibold text-lg">{company}</span>
-						<p className="text-sm font-medium text-white/60 flex items-center gap-1.5">
+						<span className="lg:font-semibold sm:font-medium md:text-lg sm:text-base">{company}</span>
+						<p className="md:text-sm text-xs font-medium text-white/60 flex items-center gap-1.5">
 							{position}
 							<span className="inline-block w-1 h-1 rounded-full bg-white/25" />
 							{type}
 						</p>
 					</div>
 				</div>
-				<span className="text-xs font-medium text-white/60 bg-white/[0.06] border border-white/10 px-3 py-1 rounded-full whitespace-nowrap">
+				<span className="sm:text-xs sm:text-[10px] font-medium text-white/60 bg-white/[0.06] border border-white/10 md:px-3 md:py-1 px-2 py-0.5 rounded-full whitespace-nowrap">
 					{startDate} – {endDate}
 				</span>
 			</div>
 
 			<div className="h-px bg-white/[0.08] mb-2" />
 
-			<p className="text-sm text-white/60 xl:leading-7 lg:leading-6">{descriptions}</p>
+			<p className="md:text-sm text-xs text-white/60 xl:leading-7 lg:leading-6">{descriptions}</p>
 		</div>
 	)
 }

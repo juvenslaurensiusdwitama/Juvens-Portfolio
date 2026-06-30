@@ -54,11 +54,11 @@ const Projects = () => {
 
   return (
     <div 
-      className='flex flex-col items-center xl:gap-10 lg:gap-8 md:gap-6 pt-25' 
+      className='flex flex-col items-center xl:gap-10 lg:gap-8 sm:gap-9 pt-25' 
       id='projects'
     >
-      <h1 className='xl:text-3xl lg:text-2xl md:text-xl text-white font-semibold'>Past Projects</h1>
-      <div className='w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px] md:max-w-[700px] grid grid-cols-1 lg:grid-cols-2'>
+      <h1 className='xl:text-3xl lg:text-2xl sm:text-xl text-white font-semibold'>Past Projects</h1>
+      <div className='w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px] md:max-w-[700px] sm:max-w-[580px] grid grid-cols-1 lg:grid-cols-2'>
         {datas.toReversed().map((data, index) => (
           <Project key={index} data={data} />
         ))}
