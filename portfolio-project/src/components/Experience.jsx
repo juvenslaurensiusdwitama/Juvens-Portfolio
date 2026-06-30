@@ -24,7 +24,7 @@ const Experience = ({ data }) => {
 						</p>
 					</div>
 				</div>
-				<span className="sm:text-xs sm:text-[10px] font-medium text-white/60 bg-white/[0.06] border border-white/10 md:px-3 md:py-1 px-2 py-0.5 rounded-full whitespace-nowrap">
+				<span className="md:text-xs sm:text-[10px] font-medium text-white/60 bg-white/[0.06] border border-white/10 md:px-3 md:py-1 px-2 py-0.5 rounded-full whitespace-nowrap">
 					{startDate} – {endDate}
 				</span>
 			</div>
