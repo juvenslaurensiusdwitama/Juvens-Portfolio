@@ -27,12 +27,23 @@ const Header = () => {
               <li className='cursor-pointer lg:rounded-r-full lg:hover:bg-white/10 lg:py-2 lg:px-5 transition duration-200' onClick={() => scrollToSection('skills')}>Skills</li>
             </ul>
           </div>
-          <button className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer lg:block hidden'>
+          <a href={encodeURI("/CV - Juvens Laurensius Dwitama.pdf")}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Juvens-Resume.pdf"
+            className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer lg:block hidden'
+          >
             <div className="flex items-center justify-center gap-2 hover:bg-white/15 rounded-md py-2 px-6 transition duration-200">
               <p className='xl:text-lg lg:text-base font-[500] text-white'>Resume</p>
               <img src={download} alt="" className='h-[16px] font-[500]' />
             </div>
-          </button>
+          </a>
+          {/* <button className='bg-white/20 backdrop-blur-md rounded-md cursor-pointer lg:block hidden'>
+            <div className="flex items-center justify-center gap-2 hover:bg-white/15 rounded-md py-2 px-6 transition duration-200">
+              <p className='xl:text-lg lg:text-base font-[500] text-white'>Resume</p>
+              <img src={download} alt="" className='h-[16px] font-[500]' />
+            </div>
+          </button> */}
         </div>
       </div>
 
