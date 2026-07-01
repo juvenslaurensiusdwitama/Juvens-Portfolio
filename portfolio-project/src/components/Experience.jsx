@@ -16,8 +16,8 @@ const Experience = ({ data }) => {
 						className="h-12 w-20 rounded-[10px] object-cover object-center border border-white/10 bg-white/8"
 					/>
 					<div className="flex flex-col gap-0.5">
-						<span className="lg:font-semibold sm:font-medium md:text-lg sm:text-base">{company}</span>
-						<p className="md:text-sm text-xs font-medium text-white/60 flex items-center gap-1.5">
+						<span className="lg:font-semibold md:font-medium md:text-lg sm:text-base">{company}</span>
+						<p className="md:text-sm text-xs lg:font-medium text-white/60 flex items-center gap-1.5">
 							{position}
 							<span className="inline-block w-1 h-1 rounded-full bg-white/25" />
 							{type}
@@ -31,7 +31,7 @@ const Experience = ({ data }) => {
 
 			<div className="h-px bg-white/[0.08] mb-2" />
 
-			<p className="md:text-sm text-xs text-white/60 xl:leading-7 lg:leading-6">{descriptions}</p>
+			<p className="md:text-sm text-xs text-white/60 xl:leading-6.5 md:leading-6 sm:leading-5.5">{descriptions}</p>
 		</div>
 	)
 }
