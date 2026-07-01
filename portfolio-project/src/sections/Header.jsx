@@ -1,23 +1,32 @@
+import { useState } from "react"
 import download from "../assets/download.png"
+import burger from "../assets/burger.png"
+import cross from "../assets/cross.png"
 
 const Header = () => {
+  // state to control whether the mobile dropdown menu is visible
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuIcon = burger
+  const closeIcon = cross
+
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
+    const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
-      });
+      })
     }
-  };
+    setIsMenuOpen(false)
+  }
 
   return (
     <>
       <div className="flex justify-center fixed left-0 right-0 top-0 z-50">
-        <div className='flex text-white sm:justify-between justify-center items-center w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px] md:max-w-[700px] sm:max-w-[580px] mt-7'>
-          <h1 className='xl:text-2xl md:text-xl sm:text-lg sm:block hidden font-[600] cursor-pointer' onClick={() => scrollToSection('introduction')}>Juvens.dev</h1>
-          <div className='flex text-white'>
-            <ul className='flex lg:gap-0 md:gap-4 sm:gap-3 gap-2.5 xl:text-lg md:text-base sm:text-sm font-[500] lg:bg-white/20 lg:backdrop-blur-md lg:rounded-4xl'>
+        <div className='flex text-white justify-between items-center w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px] md:max-w-[700px] sm:max-w-[580px] max-w-[308px] mt-7'>
+          <h1 className='xl:text-2xl md:text-xl sm:text-lg text-base font-[600] cursor-pointer' onClick={() => scrollToSection('introduction')}>Juvens.dev</h1>
+          <div className='hidden sm:flex text-white'>
+            <ul className='flex lg:gap-0 md:gap-4 sm:gap-3 gap-2 xl:text-lg md:text-base sm:text-sm text-xs font-[500] lg:bg-white/20 lg:backdrop-blur-md lg:rounded-4xl'>
               <li className='cursor-pointer lg:rounded-l-full lg:hover:bg-white/10 lg:py-2 lg:px-5 transition duration-200' onClick={() => scrollToSection('introduction')}>About</li>
               <li className='lg:border lg:border-white/15'></li>
               <li className='cursor-pointer lg:hover:bg-white/10 lg:py-2 lg:px-5 transition duration-200' onClick={() => scrollToSection('experiences')}>Experiences</li>
@@ -38,8 +47,29 @@ const Header = () => {
               <img src={download} alt="" className='sm:h-[14px] h-[10px] font-[500]' />
             </div>
           </a>
+          <button
+            className='sm:hidden flex items-center justify-center cursor-pointer'
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <img src={isMenuOpen ? closeIcon : menuIcon} alt={isMenuOpen ? "Close menu" : "Open menu"} className='h-[20px]' />
+          </button>
         </div>
       </div>
+
+      {isMenuOpen && (
+        <div className='sm:hidden fixed top-[70px] left-0 right-0 z-40 flex justify-center'>
+          <ul className='flex flex-col w-full max-w-[308px] bg-white/10 backdrop-blur-md rounded-lg text-white font-[500] text-sm overflow-hidden'>
+            <li className='cursor-pointer hover:bg-white/10 py-3 px-5 transition duration-200' onClick={() => scrollToSection('introduction')}>About</li>
+            <li className='border-t border-white/15'></li>
+            <li className='cursor-pointer hover:bg-white/10 py-3 px-5 transition duration-200' onClick={() => scrollToSection('experiences')}>Experiences</li>
+            <li className='border-t border-white/15'></li>
+            <li className='cursor-pointer hover:bg-white/10 py-3 px-5 transition duration-200' onClick={() => scrollToSection('projects')}>Projects</li>
+            <li className='border-t border-white/15'></li>
+            <li className='cursor-pointer hover:bg-white/10 py-3 px-5 transition duration-200' onClick={() => scrollToSection('skills')}>Skills</li>
+          </ul>
+        </div>
+      )}
     </>
   )
 }
