@@ -6,14 +6,13 @@ const Skill = ({ data }) => {
       <img
         src={data.icon}
         alt={data.name}
-        className="lg:w-12 lg:h-12 md:w-10 md:w-10 sm:w-12 sm:h-12 shrink-0 rounded-md object-contain"
+        className="lg:w-12 md:w-10 sm:w-12 w-10 shrink-0 rounded-md object-contain"
       />
 
       <div className="flex flex-col">
-        <h3 className="lg:text-base sm:text-sm xl:font-semibold sm:font-medium text-white">
+        <h3 className="xl:text-lg xl:font-semibold md:text-base sm:font-medium sm:text-sm text-white">
           {data.name}
         </h3>
-
         <p className="md:text-sm text-xs text-white/60">
           {data.type}
         </p>

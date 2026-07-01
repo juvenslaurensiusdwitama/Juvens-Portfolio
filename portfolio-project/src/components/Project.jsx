@@ -13,7 +13,7 @@ const Project = ({ data }) => {
             rel="noopener noreferrer"
             className="inline-block"
         >
-            <div className={`flex xl:flex-row lg:flex-col gap-4 text-white rounded-xl border border-transparent xl:p-5 lg:p-3 md:p-2 sm:p-1 transition-all duration-300 ${data.link ? select : null}`}>
+            <div className={`flex xl:flex-row lg:flex-col xl:items-center xl:justify-normal lg:justify-center lg:items-stretch items-center gap-4 text-white rounded-xl border border-transparent lg:p-4 md:p-2.5 sm:p-2 transition-all duration-300 ${data.link ? select : null}`}>
                 <div className="overflow-hidden ">
                     {data.image ? (
                         <img
@@ -45,7 +45,7 @@ const Project = ({ data }) => {
                             </Badge>
                         )}
                     </div>
-                    <p className="text-white/60 pr-1 md:text-sm text-xs sm:leading-5 xl:leading-6 md:leading-5">
+                    <p className="text-white/60 pr-1 md:text-sm text-xs sm:leading-5 xl:leading-6.5 md:leading-6 sm:leading-5.5">
                         {data.description}
                     </p>
                 </div>
