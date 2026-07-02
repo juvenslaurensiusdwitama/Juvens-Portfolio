@@ -1,10 +1,7 @@
-import { Badge } from "@/components/ui/badge"
-
 const Experience = ({ data }) => {
-	const { image, company, position, type, startDate, endDate, descriptions } = data
-
+	const { image, company, position, type, startDate, endDate, descriptions, delay } = data
 	return (
-		<div className="w-full rounded-[14px] border border-white/10 border-l-2 border-l-white/25 bg-white/[0.04] px-6 py-5.5 transition duration-300 hover:border-l-white/35 hover:border-white/15 hover:bg-white/[0.08]">
+		<div data-aos="fade-up" data-aos-duration={1000} data-aos-delay={data.delay} className="w-full rounded-[14px] border border-white/10 border-l-2 border-l-white/25 bg-white/[0.04] px-6 py-5.5 transition duration-300 hover:border-l-white/35 hover:border-white/15 hover:bg-white/[0.08]">
 			<div className="flex sm:flex-row sm:items-center sm:justify-between items-start mb-3">
 				<div className="flex items-center gap-3">
 					<img
@@ -34,7 +31,6 @@ const Experience = ({ data }) => {
 					{startDate} – {endDate}
 				</span>
 			</div>
-
 			<div className="h-px bg-white/[0.08] my-2 sm:hidden" />
 			<p className="md:text-sm text-xs text-white/60 xl:leading-6.5 md:leading-6 sm:leading-5.5">{descriptions}</p>
 		</div>
