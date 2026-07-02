@@ -59,7 +59,7 @@ const socialItemVariants = {
 const Introduction = () => {
   return (
     <div
-      className='relative flex justify-center' id='introduction'
+      className='relative flex justify-center z-40' id='introduction'
     >
       <div className={`flex sm:flex-row sm:justify-between sm:gap-0 gap-5 flex-col-reverse items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[1010px] lg:px-[50px] md:max-w-[700px] sm:max-w-[580px] lg:pt-45 sm:pt-35 pt-15`}>
         <motion.div

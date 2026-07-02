@@ -4,7 +4,7 @@ import { projectDatas } from './Data/projectDatas'
 const Projects = () => {
   return (
     <div 
-      className='flex flex-col items-center gap-4 lg:pt-23 sm:pt-18 pt-4.5' 
+      className='flex flex-col items-center gap-4 lg:pt-23 sm:pt-18 pt-4.5 z-40' 
       id='projects'
     >
       <h1 data-aos="fade-right" data-aos-duration={1000} className='xl:text-3xl lg:text-2xl sm:text-xl text-lg text-white font-semibold'>Past Projects</h1>
