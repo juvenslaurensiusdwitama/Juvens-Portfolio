@@ -13,7 +13,6 @@ import {
   PopoverTitle,
 } from "@/components/ui/popover"
 
-
 const textContainerVariants = {
   hidden: {},
   visible: {
