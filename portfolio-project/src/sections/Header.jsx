@@ -4,7 +4,6 @@ import burger from "../assets/burger.png"
 import cross from "../assets/cross.png"
 
 const Header = () => {
-  // state to control whether the mobile dropdown menu is visible
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const menuIcon = burger
   const closeIcon = cross
@@ -57,7 +56,6 @@ const Header = () => {
           </button>
         </div>
       </div>
-
       {isMenuOpen && (
         <div className='sm:hidden fixed top-[60px] left-0 right-0 z-40 flex justify-center'>
           <ul className='flex flex-col items-center w-full max-w-[302px] bg-white/10 backdrop-blur-sm rounded-lg text-white font-[500] text-sm overflow-hidden'>
