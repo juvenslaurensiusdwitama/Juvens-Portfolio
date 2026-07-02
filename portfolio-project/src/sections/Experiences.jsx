@@ -4,7 +4,7 @@ import { experienceDatas } from './Data/experienceDatas'
 const Experiences = () => {
   return (
     <div
-      className='relative flex flex-col items-center sm:gap-6 gap-4 text-white lg:pt-23 sm:pt-18 pt-4.5'
+      className='relative flex flex-col items-center sm:gap-6 gap-4 text-white lg:pt-23 sm:pt-18 pt-4.5 z-40'
       id='experiences'
     >
       <h1 className='xl:text-3xl lg:text-2xl sm:text-xl text-lg font-semibold' data-aos="fade-left" data-aos-duration={800}>Experiences</h1>

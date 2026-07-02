@@ -66,7 +66,7 @@ function App() {
                   .signal-scanlines { animation: none !important; }
               }
             `}</style>
-            <div className="signal-scanlines pointer-events-none fixed inset-0 z-40" />
+            <div className="signal-scanlines pointer-events-none fixed inset-0 z-10" />
             <Header />
             <Introduction />
             <Experiences />
