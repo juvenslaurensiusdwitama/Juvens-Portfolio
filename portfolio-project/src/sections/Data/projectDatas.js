@@ -12,7 +12,7 @@ export const projectDatas = [
         description: 'An IMDb-style movie discovery platform for searching films, saving favorites, joining community discussions, and engaging with AI-powered chatbots for personalized recommendations.',
         status: true,
         link: 'https://movieverse97.vercel.app/',
-        delay: 1200,
+        delay: 400,
     },
     {
         image: greeve,
@@ -20,7 +20,7 @@ export const projectDatas = [
         description: 'An e-commerce platform for eco-friendly products that support a greener environment. It focuses on a seamless product browsing experience and facilitates smooth buy/sell interactions.',
         status: false,
         link: null,
-        delay: 1000,
+        delay: 400,
     },
     {
         image: schooltechh,
@@ -28,7 +28,7 @@ export const projectDatas = [
         description: 'Collaborated with PMs, backend engineers, and UI/UX designers to deliver a responsive school management platform. Implemented core features, including role, partner, mentor, and activity management.',
         status: false,
         link: null,
-        delay: 800,
+        delay: 300,
     },
     {
         image: bmusic,
@@ -36,7 +36,7 @@ export const projectDatas = [
         description: 'Developed a custom booking system and company profile for BMusicStudio, streamlining studio reservations and improving overall customer experience using modern technologies.',
         status: false,
         link: null,
-        delay: 600,
+        delay: 300,
     },
     {
         image: giat,
@@ -44,7 +44,7 @@ export const projectDatas = [
         description: "A professional company profile website for PT Global Intelligence Artificial Technology. Developed to establish a clear brand identity and deliver engaging presentations for clients and stakeholders.",
         status: true,
         link: 'https://www.giat-ai.com/',
-        delay: 400,
+        delay: 200,
     },
     {
         image: reactrealm,
