@@ -1,17 +1,17 @@
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import link from "../assets/external-link.png"
-import block from "../assets/block.png"
 
 const Project = ({ data }) => {
     const select = 'hover:-translate-y-1 hover:border-white/15 hover:bg-white/15 hover:shadow-[0_0_20px_rgba(255,255,255,0.06)]'
-
     return (
         <a
             href={data.link}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"
+            data-aos="fade-up"
+            data-aos-duration={1000}
+            data-aos-delay={data.delay}
         >
             <div className={`flex xl:flex-row lg:flex-col sm:flex-row flex-col xl:items-center xl:justify-normal lg:justify-center lg:items-stretch items-center gap-4 text-white rounded-xl border border-transparent lg:p-4 md:p-2.5 sm:p-2 transition-all duration-300 ${data.link ? select : null}`}>
                 <div className="overflow-hidden ">

@@ -5,10 +5,17 @@ import Experiences from "./sections/Experiences";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import fullbg from './assets/fullbg.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <div 
+    <div
       className='font-display relative w-full min-h-screen bg-center bg-cover'
       style={{ backgroundImage: `url(${fullbg})` }}
     >
