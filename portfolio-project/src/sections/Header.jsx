@@ -57,7 +57,7 @@ const Header = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className='sm:hidden fixed top-[60px] left-0 right-0 z-40 flex justify-center'>
+        <div className='sm:hidden fixed top-[60px] left-0 right-0 z-50 flex justify-center'>
           <ul className='flex flex-col items-center w-full max-w-[302px] bg-white/10 backdrop-blur-sm rounded-lg text-white font-[500] text-sm overflow-hidden'>
             <li className='cursor-pointer hover:bg-white/10 py-3 px-5 transition duration-200' onClick={() => scrollToSection('introduction')}>About</li>
             <li className='border-t border-white/30 w-full'></li>
