@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <>
       <div className="flex justify-center fixed left-0 right-0 top-0 z-50">
-        <div className='flex text-white justify-between items-center w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px] md:max-w-[700px] sm:max-w-[580px] sm:px-0 px-3 sm:mt-7 mt-3'>
+        <div className='flex text-white justify-between items-center w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[910px] md:max-w-[700px] sm:max-w-[580px] sm:px-0 px-3 sm:mt-7 mt-3.5'>
           <h1 className='xl:text-2xl md:text-xl sm:text-lg text-base font-[600] cursor-pointer' onClick={() => scrollToSection('introduction')}>
             Juvens.dev
           </h1>
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className='sm:hidden fixed top-[45px] right-3 z-50 flex justify-center'>
+        <div className='sm:hidden fixed top-[48px] right-3 z-50 flex justify-center'>
           <ul className='flex flex-col items-center w-full bg-black/20 backdrop-blur-sm rounded-lg text-white font-[500] text-sm overflow-hidden'>
             <li className='cursor-pointer hover:bg-white/10 py-3 px-5 transition duration-200' onClick={() => scrollToSection('introduction')}>About</li>
             <li className='border-t border-white/15 w-[150px]'></li>

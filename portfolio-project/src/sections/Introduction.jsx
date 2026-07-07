@@ -61,7 +61,7 @@ const Introduction = () => {
     <div
       className='relative flex justify-center z-40' id='introduction'
     >
-      <div className={`flex sm:flex-row sm:justify-between sm:gap-0 gap-5 flex-col-reverse items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[1010px] lg:px-[50px] md:max-w-[700px] sm:max-w-[580px] lg:pt-45 sm:pt-35 pt-11 sm:px-0 px-3`}>
+      <div className={`flex sm:flex-row sm:justify-between sm:gap-0 gap-5 flex-col-reverse items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[1010px] lg:px-[50px] md:max-w-[700px] sm:max-w-[580px] lg:pt-45 sm:pt-35 pt-12 sm:px-0 px-3`}>
         <motion.div
           className='flex flex-col xl:gap-3 lg:gap-2 md:gap-2 gap-1 xl:max-w-[610px] lg:max-w-[510px] md:max-w-[410px] sm:max-w-[350px]'
           variants={textContainerVariants}
