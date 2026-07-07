@@ -96,7 +96,7 @@ const Introduction = () => {
             whileTap={{ scale: 0.95 }}
           >
             <div className="flex justify-center items-center sm:gap-2 gap-1 sm:rounded-md rounded-sm hover:bg-white/15 md:py-2 lg:px-5 sm:py-2 sm:px-4 py-1.5 px-3 transition duration-200">
-              <p className='xl:text-lg md:text-base sm:text-sm text-xs font-[500] text-white'>Resume</p>
+              <p className='xl:text-lg md:text-base text-sm sm:font-[500] text-white'>Resume</p>
               <img src={download} alt="" className='sm:h-[14px] h-[10px] font-[500]' />
             </div>
           </motion.a>
