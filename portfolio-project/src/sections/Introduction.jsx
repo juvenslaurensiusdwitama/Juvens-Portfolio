@@ -61,9 +61,9 @@ const Introduction = () => {
     <div
       className='relative flex justify-center z-40' id='introduction'
     >
-      <div className={`flex sm:flex-row sm:justify-between sm:gap-0 gap-5 flex-col-reverse items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[1010px] lg:px-[50px] md:max-w-[700px] sm:max-w-[580px] lg:pt-45 sm:pt-35 pt-15`}>
+      <div className={`flex sm:flex-row sm:justify-between sm:gap-0 gap-5 flex-col-reverse items-center text-white w-full xl:max-w-[1300px] xl:px-[50px] lg:max-w-[1010px] lg:px-[50px] md:max-w-[700px] sm:max-w-[580px] lg:pt-45 sm:pt-35 pt-11 sm:px-0 px-3`}>
         <motion.div
-          className='flex flex-col xl:gap-3 lg:gap-2 md:gap-2 gap-1 xl:max-w-[610px] lg:max-w-[510px] md:max-w-[410px] sm:max-w-[350px] max-w-[302px]'
+          className='flex flex-col xl:gap-3 lg:gap-2 md:gap-2 gap-1 xl:max-w-[610px] lg:max-w-[510px] md:max-w-[410px] sm:max-w-[350px]'
           variants={textContainerVariants}
           initial="hidden"
           animate="visible"
@@ -102,17 +102,17 @@ const Introduction = () => {
           </motion.a>
         </motion.div>
 
-        <div className='flex lg:flex-row sm:flex-col justify-center items-center md:gap-6 gap-4'>
+        <div className='relative flex lg:flex-row sm:flex-col justify-center items-center md:gap-6 gap-4'>
           <motion.img
             src={pp2}
             alt="Juvens"
-            className='xl:h-[500px] xl:w-[450px] lg:h-[350px] lg:w-[300px] md:h-[300px] md:w-[250px] sm:h-[250px] sm:w-[200px] h-[300px] w-[250px] object-cover sm:rounded-[70%_30%_30%_70%_/_60%_40%_60%_40%] border border-white/10 shadow-xl sm:hover:rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] rounded-lg transition-all duration-1000 ease-in-out'
+            className='xl:h-[500px] xl:w-[450px] lg:h-[350px] lg:w-[300px] md:h-[300px] md:w-[250px] sm:h-[250px] sm:w-[200px] h-full w-full object-cover sm:rounded-[70%_30%_30%_70%_/_60%_40%_60%_40%] border border-white/10 shadow-xl sm:hover:rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] rounded-lg transition-all duration-1000 ease-in-out'
             variants={imageVariants}
             initial="hidden"
             animate="visible"
           />
           <motion.ul
-            className='flex lg:flex-col sm:flex-row flex-col lg:gap-4 gap-3'
+            className='flex lg:flex-col sm:flex-row flex-col lg:gap-4 sm:gap-3 gap-2 absolute top-3 right-3 sm:static sm:right-auto'
             variants={socialContainerVariants}
             initial="hidden"
             animate="visible"
