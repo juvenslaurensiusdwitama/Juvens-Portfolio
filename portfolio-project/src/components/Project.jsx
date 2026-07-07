@@ -19,10 +19,10 @@ const Project = ({ data }) => {
                         <img
                             src={data.image}
                             alt={data.projectName}
-                            className="rounded-lg border border-white/10 xl:w-[200px] xl:h-[150px] lg:w-full lg:h-[300px] sm:w-[150px] sm:h-[100px] w-full h-[258px] object-cover object-center"
+                            className="rounded-lg border border-white/10 xl:w-[200px] xl:h-[150px] lg:w-full lg:h-[300px] sm:w-[150px] sm:h-[100px] w-full object-cover object-center"
                         />
                     ) : (
-                        <div className="rounded-lg border border-white/10 xl:w-[200px] xl:h-[150px] lg:w-full lg:h-[300px] sm:w-[150px] sm:h-[100px] w-full h-[258px] flex justify-center items-center bg-black/40 text-white/30 text-xs font-medium">
+                        <div className="rounded-lg border border-white/10 xl:w-[200px] xl:h-[150px] lg:w-full lg:h-[300px] sm:w-[150px] sm:h-[100px] w-full flex justify-center items-center bg-black/40 text-white/30 text-xs font-medium">
                             N/A
                         </div>
                     )}
