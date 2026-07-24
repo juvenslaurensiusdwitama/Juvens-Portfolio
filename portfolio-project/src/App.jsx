@@ -50,22 +50,6 @@ function App() {
             className='font-display relative w-full min-h-screen bg-center bg-cover'
             style={{ backgroundImage: `url(${fullbg})`, backgroundColor: '#0b0904' }}
           >
-            <style>{`
-              @keyframes scan { 0% { background-position: 0 0; } 100% { background-position: 0 8px; } }
-              .signal-scanlines {
-                  background-image: repeating-linear-gradient(
-                      to bottom,
-                      rgba(255,255,255,0.04) 0px,
-                      rgba(255,255,255,0.04) 1px,
-                      transparent 1px,
-                      transparent 3px
-                  );
-                  animation: scan 0.5s linear infinite;
-              }
-              @media (prefers-reduced-motion: reduce) {
-                  .signal-scanlines { animation: none !important; }
-              }
-            `}</style>
             <div className="signal-scanlines pointer-events-none fixed inset-0 z-10" />
             <Header />
             <Introduction />
